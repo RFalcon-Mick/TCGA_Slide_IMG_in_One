@@ -10,7 +10,7 @@ for filename in os.listdir(source_folder):
     # 确保是svs文件
     if filename.endswith(".svs"):
         # 取前12位字符
-        identifier = filename[:14]
+        identifier = filename[:16]
 
         # Create the subfolder with the identifier if it does not exist
         subfolder_path = os.path.join(destination_folder, identifier)
